@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
    <title>CV</title>
 </head>
+
 <body>
-   Hancharuk
+   <div class="wrapper">
+      <header class="header">
+         <div class="container container-header">
+            <nav class="nav">
+               <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#aboutme" class="nav-link">About me</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                  <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <main class="main">
+         <div class="container main-container">
+            <section class="section-profile">
+               <img src="assets/I.jpg" class="profile-foto" alt="my foto">
+               <div class="section-profile-title">
+                  <h1>ALIAKSEI <br> HANCHARUK</h1>
+               </div>
+            </section>
+            <section class="section" id="contacts">
+               <h2 class="section-title">Contacts</h2>
+               <ul class="section-list">
+                  <li class="section contact-item">Location:<span>Belarus,Grodno</span></li>
+                  <li class="section contact-item">Email:<a href="mailto:hancharuk19257@gmail.com"
+                        title="email">hancharuk19257@gmail.com</a></li>
+                  <li class="section contact-item">GitHub:<a href="https://github.com/FromGrodno" title="github"
+                        target="_blank">FromGrodno</a></li>
+                  <li class="section contact-item">Discord:<a href="https://discord.com/channels/@me/915546405668524052"
+                        title="discord" target="_blank">Aliaksei#7578</a></li>
+               </ul>
+            </section>
+            <section class="section" id="aboutme">
+               <h2 class="section-title">About me</h2>
+               <p>Hi, my name is Aliaksei. I am 33 years old and I want to become a front-end developer. I believe that
+                  I
+                  will succeed because I am purposeful, communicative and I have a good memory.
+               </p>
+            </section>
+            <section class="section" id="skills">
+               <h2 class="section-title">Skills</h2>
+               <ul class="section-list">
+                  <li class="section-item">Html</li>
+                  <li class="section-item">Css</li>
+                  <li class="section-item">VSCode</li>
+                  <li class="section-item">Git&GitHub</li>
+                  <li class="section-item">Java script</li>
+               </ul>
+            </section>
+            <section class="section" id="code">
+               <h2 class="section-title">Code examples</h2>
+               <pre class="pre">
+function dataReverse(data) {
+let data3 = []
+let data1 = []
+for (let i = 0; i < data.length; i = i + 8) {
+data1.unshift(data.slice(i, i + 8))}
+data1.forEach(function (elem) {
+elem.forEach(function (item) {data3.push(item)})
+})
+return data3}
+               </code>
+            </pre>
+            </section>
+            <section class="section" id="courses">
+               <h2 class="section-title">Courses</h2><br>
+               <p class="section-item">JavaScript/Front-end Course in RSS - 12\2021
+               </p>
+            </section>
+            <section class="section" id="projects">
+               <h2 class="section-title">Projects</h2>
+               <p class="section-item">My <a
+                     href="https://rolling-scopes-school.github.io/fromgrodno-JSFEPRESCHOOL/JS30.1/" title="videoplayer"
+                     target="_blank">videoplayer</a>
+               </p>
+            </section>
+            <section class="section" id="education">
+               <h2 class="section-title">Education</h2>
+               <p>Grodno State University (Faculty of Physics and Technology)</p>
+            </section>
+            <section class="section" id="english">
+               <h2 class="section-title">English</h2>
+               <p>A2 (Elementary)</p>
+            </section>
+
+         </div>
+      </main>
+
+      <footer class="footer">
+         <div class="container footer-container">
+            <div class="footer-git"><a href="https://github.com/FromGrodno" title="github" target="_blank">GitHub</a>
+            </div>
+            <div class="data">2022
+            </div>
+            <div class="footer-course">
+               <a href="https://rs.school/js/" title="link-course" target="_blank">
+                  <img src="assets/rss.svg" alt="logo-course">
+               </a>
+            </div>
+         </div>
+      </footer>
+   </div>
 </body>
+
 </html>
